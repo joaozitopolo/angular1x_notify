@@ -9,7 +9,7 @@
             noty(angular.extend({
                 text: text,
                 layout: 'topRight',
-                type: optType || 'success',
+                type: 'success',
                 timeout: 5000,
                 force: true,
                 animation: {
