@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "copyfiles -f node_modules/jquery/dist/jquery.min.js node_modules/angular/angular.min.js node_modules/noty/js/noty/packaged/jquery.noty.packaged.min.js sample"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "angular": "~1.5.9",
     "jquery": "~3.1.1",
-    "noty": "~2.3.8"
+    "noty": "~2.3.8",
+    "copyfiles": "~1.0.0"
   }
 }
