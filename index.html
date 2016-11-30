@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Noty test with angular 1.x</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="node_modules/angular/angular-csp.css">
+    </head>
+    <body>
+        <div ng-controller="Main as main">
+            <label>Text for notification:
+                <input type="text" ng-model="main.text" />
+            </label>
+            <div>
+                <button ng-click="main.notify(main.text)">Show Note</button>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="node_modules/noty/js/noty/packaged/jquery.noty.packaged.min.js"></script>
+        <script type="text/javascript" src="notify.module.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
